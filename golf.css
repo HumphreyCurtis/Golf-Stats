@@ -383,6 +383,10 @@
   }
   td.score .none,
   td.par .none{color:#c3bba6;font-size:15px;font-family:'Inter',sans-serif;font-weight:400;}
+  /* the par/score dash is meant to fade into the page, but in the rating
+     column a faded dash reads as "empty cell" rather than "not rated" —
+     darker so an unrated course is still clearly a deliberate omission */
+  td.rating .none{color:var(--muted);font-size:15px;font-family:'Inter',sans-serif;font-weight:400;}
   td.par{
     width:62px;text-align:right;
     font-variant-numeric:tabular-nums;
@@ -391,6 +395,46 @@
     white-space:nowrap;
   }
   td.with{width:148px;}
+  td.rating{width:98px;}
+  .gballs{display:inline-flex;gap:3px;vertical-align:middle;}
+  /* a real dimpled golf ball, small enough to sit quietly in a table cell:
+     a handful of fixed dimple dots plus a highlight/shadow pair for the
+     sphere, layered over a white base so it still reads at 10px. */
+  .gball{
+    width:10px;height:10px;
+    border-radius:50%;
+    background:var(--border);          /* empty state: hollow, unfilled */
+    box-shadow:inset 0 0 0 1.2px var(--ink);
+  }
+  .gball.full,
+  .gball.half{
+    box-shadow:
+      inset 0 0 0 1.2px var(--ink),
+      inset -1px -1px 1.5px rgba(32,40,31,.22),
+      inset 1px 1px 1px rgba(255,255,255,.95);
+    background:
+      radial-gradient(circle at 22% 20%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 46% 16%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 70% 22%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 30% 44%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 55% 42%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 78% 48%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 25% 68%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 50% 70%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 72% 74%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      #fdfdfb;
+  }
+  .gball.half{
+    /* right half painted over the dimples so only the left half reads as
+       filled, matching the empty ball's hollow tone */
+    background:
+      linear-gradient(90deg, transparent 50%, var(--border) 50%),
+      radial-gradient(circle at 22% 20%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 46% 16%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 30% 44%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      radial-gradient(circle at 25% 68%, rgba(32,40,31,.4) 0 .5px, transparent .6px 100%),
+      #fdfdfb;
+  }
   .tag{
     display:inline-block;
     font-size:10.5px;

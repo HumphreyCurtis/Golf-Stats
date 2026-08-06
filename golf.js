@@ -77,6 +77,8 @@ const COLUMNS = [
    cell:d => d.par == null ? DASH : d.par},
   {label:'Best',        cls:'score',  sort:'best_score', align:'right',
    cell:d => d.best_score == null ? DASH : d.best_score},
+  {label:'Rating',      cls:'rating', sort:'rating',     align:'center',
+   cell:d => ratingHTML(d.rating), title:d => d.rating == null ? null : `${d.rating} / 5`},
 ];
 
 // A nine-hole 27 must never sit above an eighteen-hole 73, so they are ranked
@@ -95,6 +97,21 @@ const esc = s => String(s).replace(/[&<>"]/g, ch =>
 function partnersHTML(c){
   return PARTNERS.filter(p => c[p.key])
     .map(p => `<span class="tag person">${p.label}</span>`).join('');
+}
+
+// 5 balls, half-steps allowed: full for whole points, one half ball for a
+// .5, the rest left hollow. Ratings are a personal judgment call, so an
+// unrated course gets the same dash as an unrecorded par/score, not a row
+// of empty balls implying "rated zero".
+function ratingHTML(r){
+  if (r == null) return DASH;
+  const full = Math.floor(r);
+  const half = r % 1 !== 0;
+  const balls = Array.from({length:5}, (_, i) => {
+    const cls = i < full ? 'full' : (i === full && half ? 'half' : 'empty');
+    return `<span class="gball ${cls}"></span>`;
+  }).join('');
+  return `<span class="gballs">${balls}</span>`;
 }
 
 // derived presentation fields; everything factual already comes from the JSON
