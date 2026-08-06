@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humphrey's Courses Played</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="golf.css">
+</head>
+<body>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Personal Stats &mdash; Golf</p>
+    <h1>Humphrey's Courses Played</h1>
+    <p class="sub">Every course logged. Drag and zoom the map, click a flag to see what was played there &mdash; or read the leaderboard below, one course per line.</p>
+    <div class="stats-strip" id="stats-strip"></div>
+    <div class="cstrip-wrap">
+      <p class="cstrip-title">Courses by country</p>
+      <div class="country-strip" id="country-strip"></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <p id="load-error" class="load-error"></p>
+
+  <section>
+    <div class="sec-head">
+      <h2>The Map</h2>
+      <p class="section-sub">Scroll or pinch to zoom, drag to pan, click a flag for the courses there.</p>
+    </div>
+    <div id="map-wrap">
+      <div id="map" role="region" aria-label="Map of golf courses played"></div>
+      <div class="map-controls">
+        <button id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+        <button id="zoom-out" title="Zoom out" aria-label="Zoom out">&minus;</button>
+        <button id="zoom-reset" class="reset" title="Reset view" aria-label="Reset view">Fit</button>
+      </div>
+      <div class="map-hint">Scroll to zoom &middot; drag to pan</div>
+      <div class="detail" id="detail">
+        <div class="detail-head">
+          <div>
+            <p class="place" id="detail-place"></p>
+            <div class="cnt" id="detail-count"></div>
+          </div>
+          <button class="detail-close" id="detail-close" aria-label="Close">&times;</button>
+        </div>
+        <div class="detail-body" id="detail-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>The Leaderboard</h2>
+      <p class="section-sub">Click any column heading to re-sort. Click a row to find it on the map.</p>
+    </div>
+    <div class="toolbar">
+      <div class="search-box">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input type="text" id="course-search" placeholder="Filter by course, city or country&hellip;" autocomplete="off">
+      </div>
+      <div class="filters" id="filters"></div>
+    </div>
+    <!-- both boards, their headers and their cells are generated from the
+         COLUMNS and BOARDS definitions at the top of golf.js -->
+    <div id="boards"></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  Built with D3.js and Leaflet &middot; basemap &copy; Esri &middot; scores from Shotscope round data where available.<br>
+  <span id="foot-note"></span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="golf.js"></script>
+</body>
+</html>

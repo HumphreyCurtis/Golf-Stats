@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Golf flag in a cup, in the site's cream / claret / green palette -->
+  <rect width="64" height="64" rx="14" fill="#f6f1e6"/>
+  <!-- green -->
+  <ellipse cx="32" cy="49" rx="22" ry="8" fill="#3a5540"/>
+  <!-- hole -->
+  <ellipse cx="32" cy="47" rx="5.5" ry="2.4" fill="#20281f"/>
+  <!-- flagstick -->
+  <line x1="32" y1="47" x2="32" y2="12" stroke="#141414" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- pennant -->
+  <path d="M32 12 L54 20 L32 28 Z" fill="#a8251a"/>
+</svg>
