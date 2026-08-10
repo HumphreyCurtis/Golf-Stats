@@ -2550,5 +2550,27 @@
     "lat": 50.746,
     "lon": -1.69,
     "coord_precision": "city"
+  },
+  {
+    "name": "Langley Park Golf Club",
+    "club": "Langley Park Golf Club",
+    "location": "Beckenham, Kent, England, UK",
+    "country": "England",
+    "sovereign": "UK",
+    "holes": 18,
+    "par": 70,
+    "par_source": "known",
+    "best_score": null,
+    "first_played": 2015,
+    "date_estimated": true,
+    "date_source": "estimated",
+    "played_with_dad": null,
+    "played_with_max": null,
+    "played_with_alexander": null,
+    "rating": 3.5,
+    "notes": "first played ~2015 (rough estimate)",
+    "lat": 51.4022,
+    "lon": 0.0294,
+    "coord_precision": "course"
   }
 ]

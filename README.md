@@ -4,7 +4,7 @@ A single-page site logging every golf course I've played: an interactive
 map plus a sortable leaderboard, split into eighteen-hole and nine-hole
 boards.
 
-**[View the live map](#)** *(add your GitHub Pages URL here once deployed)*
+**[View the live map](https://humphreycurtis.github.io/Golf-Stats/)**
 
 ## What's here
 
