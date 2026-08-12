@@ -2572,5 +2572,27 @@
     "lat": 51.4022,
     "lon": 0.0294,
     "coord_precision": "course"
+  },
+  {
+    "name": "Sharp Park Golf Course",
+    "club": "Sharp Park Golf Course",
+    "location": "Pacifica, California, USA",
+    "country": "USA",
+    "sovereign": "USA",
+    "holes": 18,
+    "par": 72,
+    "par_source": "known",
+    "best_score": 82,
+    "first_played": 2026,
+    "date_estimated": false,
+    "date_source": "user statement",
+    "played_with_dad": false,
+    "played_with_max": false,
+    "played_with_alexander": false,
+    "rating": 3.5,
+    "notes": "Alister MacKenzie-designed municipal links course; played this year",
+    "lat": 37.636,
+    "lon": -122.499,
+    "coord_precision": "course"
   }
 ]

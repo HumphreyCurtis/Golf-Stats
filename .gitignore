@@ -1,2 +1,5 @@
 .DS_Store
 *.swp
+
+# personal, not for publishing
+golf_wishlist.json
