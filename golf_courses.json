@@ -2638,5 +2638,27 @@
     "lat": 37.7699,
     "lon": -122.4753,
     "coord_precision": "city"
+  },
+  {
+    "name": "Claremont Country Club",
+    "club": "Claremont Country Club",
+    "location": "Oakland, California, USA",
+    "country": "USA",
+    "sovereign": "USA",
+    "holes": 18,
+    "par": 68,
+    "par_source": "derived",
+    "best_score": 79,
+    "first_played": 2026,
+    "date_estimated": false,
+    "date_source": "user statement",
+    "played_with_dad": null,
+    "played_with_max": null,
+    "played_with_alexander": null,
+    "rating": 4.5,
+    "notes": "played August 18, 2026; +11; Alister MacKenzie redesign (1926); par 68 from web lookup",
+    "lat": 37.8374,
+    "lon": -122.243,
+    "coord_precision": "course"
   }
 ]
