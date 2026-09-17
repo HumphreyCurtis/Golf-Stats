@@ -2662,6 +2662,28 @@
     "coord_precision": "course"
   },
   {
+    "name": "Northwood Golf Club",
+    "club": "Northwood Golf Club",
+    "location": "Monte Rio, California, USA",
+    "country": "USA",
+    "sovereign": "USA",
+    "holes": 9,
+    "par": 36,
+    "par_source": "known",
+    "best_score": 41,
+    "first_played": 2026,
+    "date_estimated": false,
+    "date_source": "user statement",
+    "played_with_dad": null,
+    "played_with_max": null,
+    "played_with_alexander": null,
+    "rating": 4.5,
+    "notes": "Alister MacKenzie-designed 9-hole course; +5",
+    "lat": 38.4777,
+    "lon": -122.997,
+    "coord_precision": "course"
+  },
+  {
     "name": "Royal Burgess Golfing Society",
     "club": "The Royal Burgess Golfing Society of Edinburgh",
     "location": "Edinburgh, Scotland, UK",
