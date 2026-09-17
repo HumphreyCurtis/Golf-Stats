@@ -2660,5 +2660,27 @@
     "lat": 37.8374,
     "lon": -122.243,
     "coord_precision": "course"
+  },
+  {
+    "name": "Royal Burgess Golfing Society",
+    "club": "The Royal Burgess Golfing Society of Edinburgh",
+    "location": "Edinburgh, Scotland, UK",
+    "country": "Scotland",
+    "sovereign": "UK",
+    "holes": 18,
+    "par": 71,
+    "par_source": "user statement",
+    "best_score": 78,
+    "first_played": 2026,
+    "date_estimated": false,
+    "date_source": "user statement",
+    "played_with_dad": false,
+    "played_with_max": false,
+    "played_with_alexander": false,
+    "rating": 3.5,
+    "notes": "played September 17, 2026; +7; played alone",
+    "lat": 55.965,
+    "lon": -3.2993,
+    "coord_precision": "course"
   }
 ]
