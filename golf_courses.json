@@ -2704,5 +2704,27 @@
     "lat": 55.965,
     "lon": -3.2993,
     "coord_precision": "course"
+  },
+  {
+    "name": "Archerfield Links - Dirleton Links",
+    "club": "Archerfield Golf Club",
+    "location": "Dirleton, East Lothian, Scotland, UK",
+    "country": "Scotland",
+    "sovereign": "UK",
+    "holes": 18,
+    "par": 72,
+    "par_source": "derived",
+    "best_score": 90,
+    "first_played": 2026,
+    "date_estimated": false,
+    "date_source": "user statement",
+    "played_with_dad": null,
+    "played_with_max": null,
+    "played_with_alexander": null,
+    "rating": 4,
+    "notes": "played September 19, 2026; +18; extreme westerly winds, sustained around 23-26 mph and gusting roughly 40-48 mph; balls oscillated on the greens and the stand bag repeatedly blew over; amazing front nine, but the back nine was a tad dull; par 72 from the official scorecard",
+    "lat": 56.0515,
+    "lon": -2.7962,
+    "coord_precision": "course"
   }
 ]
